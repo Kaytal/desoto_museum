@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DeSoto County Museum - Explore our heritage</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script type="text/x-handlebars">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/logo240x210.jpg" width="200" class="img-responsive" alt="Desoto County Museum Logo"/>
+        </div>
+        <div class="col-md-7">
+          <h1>DeSoto County Museum</h1>
+          <p>111 E Commerce Street<br />Hernando, MS 38671</p>
+        </div>
+        <div class="col-md-3">
+          <p>Phone: <a href="tel:16624298852">662-429-8852</a></p>
+          <p>Email: <a href="mailto:info@desotomuseum.org">info@desotomuseum.org</a></p>
+        </div>
+      </div>
+      <hr />
+      <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Sponsors</a></li>
+      </ul>
+      <hr />
+      <div class="row">
+      {{outlet}}
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" id="index">
+
+  </script>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.7.0.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>
