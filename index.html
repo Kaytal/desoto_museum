@@ -10,36 +10,61 @@
 <body>
   <script type="text/x-handlebars">
     <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <img src="img/logo240x210.jpg" width="200" class="img-responsive" alt="Desoto County Museum Logo"/>
+      <header>
+        <div class="row top">
+          <div class="col-md-2">
+            <img src="img/logo240x210.jpg" width="200" class="img-responsive" alt="Desoto County Museum Logo"/>
+          </div>
+          <div class="col-md-7">
+            <h1 class="text-center">DeSoto County Museum</h1>
+            <p class="text-center">111 E Commerce Street<br />Hernando, MS 38671</p>
+          </div>
+          <div class="col-md-3">
+            <p>Phone: <a href="tel:16624298852">662-429-8852</a></p>
+            <p>Email: <a href="mailto:info@desotomuseum.org">info@desotomuseum.org</a></p>
+          </div>
         </div>
-        <div class="col-md-7">
-          <h1 class="text-center">DeSoto County Museum</h1>
-          <p class="text-center">111 E Commerce Street<br />Hernando, MS 38671</p>
-        </div>
-        <div class="col-md-3">
-          <p>Phone: <a href="tel:16624298852">662-429-8852</a></p>
-          <p>Email: <a href="mailto:info@desotomuseum.org">info@desotomuseum.org</a></p>
-        </div>
-      </div>
-      <hr />
-      <ul class="nav nav-pills nav-justified">
-        <li class="active">{{#link-to 'home'}}Home{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-        <li>{{#link-to 'education'}}Education{{/link-to}}</li>
-        <li>{{#link-to 'membership'}}Membership{{/link-to}}</li>
-        <li>{{#link-to 'sponsors'}}Sponsors{{/link-to}}</li>
-      </ul>
-      <hr />
+        <hr />
+        <ul class="nav nav-pills nav-justified" role="navigation">
+          {{#link-to 'index' tagName="li" href=false}}
+            {{#link-to 'index' bubbles=false}}
+              Home
+            {{/link-to}}
+          {{/link-to}}
+          {{#link-to 'about' tagName="li" href=false}}
+            {{#link-to 'about' bubbles=false}}
+              About
+            {{/link-to}}
+          {{/link-to}}
+          {{#link-to 'education' tagName="li" href=false}}
+            {{#link-to 'education' bubbles=false}}
+              Education
+            {{/link-to}}
+          {{/link-to}}
+          {{#link-to 'membership' tagName="li" href=false}}
+            {{#link-to 'membership' bubbles=false}}
+              Membership
+            {{/link-to}}
+          {{/link-to}}
+          {{#link-to 'sponsors' tagName="li" href=false}}
+            {{#link-to 'sponsors' bubbles=false}}
+              Sponsors
+            {{/link-to}}
+          {{/link-to}}
+        </ul>
+        <hr />
+
+
+      </header>
         {{outlet}}
+      <footer class="text-center">
+        Copyright &copy; 2014 DeSoto County Museum | <a href="http://web.southernfriedgeek.com" alt="Southern Fried Geek Web Studios">SFG Web Studios</a>
+      </footer>
     </div>
   </script>
-  <script type="text/x-handlebars" id="/">
-  </script>
-  <script type="text/x-handlebars" id="home">
-  </script>
+  <script type="text/x-handlebars" id="index">
 
+  </script>
   <script type="text/x-handlebars" id="about">
 
   </script>
