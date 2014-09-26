@@ -15,8 +15,8 @@
           <img src="img/logo240x210.jpg" width="200" class="img-responsive" alt="Desoto County Museum Logo"/>
         </div>
         <div class="col-md-7">
-          <h1>DeSoto County Museum</h1>
-          <p>111 E Commerce Street<br />Hernando, MS 38671</p>
+          <h1 class="text-center">DeSoto County Museum</h1>
+          <p class="text-center">111 E Commerce Street<br />Hernando, MS 38671</p>
         </div>
         <div class="col-md-3">
           <p>Phone: <a href="tel:16624298852">662-429-8852</a></p>
@@ -25,20 +25,31 @@
       </div>
       <hr />
       <ul class="nav nav-pills nav-justified">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Membership</a></li>
-        <li><a href="#">Sponsors</a></li>
+        <li class="active">{{#link-to 'home'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'education'}}Education{{/link-to}}</li>
+        <li>{{#link-to 'membership'}}Membership{{/link-to}}</li>
+        <li>{{#link-to 'sponsors'}}Sponsors{{/link-to}}</li>
       </ul>
       <hr />
-      <div class="row">
-      {{outlet}}
-      </div>
+        {{outlet}}
     </div>
   </script>
+  <script type="text/x-handlebars" id="/">
+  </script>
+  <script type="text/x-handlebars" id="home">
+  </script>
 
-  <script type="text/x-handlebars" id="index">
+  <script type="text/x-handlebars" id="about">
+
+  </script>
+  <script type="text/x-handlebars" id="education">
+
+  </script>
+  <script type="text/x-handlebars" id="membership">
+
+  </script>
+  <script type="text/x-handlebars" id="sponsors">
 
   </script>
 

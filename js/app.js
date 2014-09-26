@@ -1,10 +1,11 @@
 App = Ember.Application.create();
 
 App.Router.map(function() {
-  // put your routes here
+	this.resource('/');
+	this.resource('home');
+	this.resource('about');
+	this.resource('education');
+	this.resource('membership');
+	this.resource('sponsors');// put your routes here
 });
 
-App.IndexRoute = Ember.Route.extend({
-  model: function() {
-  }
-});
