@@ -4,9 +4,7 @@ Desoto County Museum
 New EmberJS app for the Desoto Museum
 
 
-Text for the Pages
-_____________
-
+## Text for the Pages
 ### Front page
 
 Welcome to the DeSoto County Museum!  Located in Hernando, Mississippi, the Museum showcases artifacts and exhibits featuring the history of DeSoto County, Mississippi.
