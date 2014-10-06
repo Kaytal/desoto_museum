@@ -32,9 +32,9 @@
               Home
             {{/link-to}}
           {{/link-to}}
-          {{#link-to 'about' tagName="li" href=false}}
-            {{#link-to 'about' bubbles=false}}
-              About
+          {{#link-to 'staff' tagName="li" href=false}}
+            {{#link-to 'staff' bubbles=false}}
+              Staff
             {{/link-to}}
           {{/link-to}}
           {{#link-to 'education' tagName="li" href=false}}
@@ -59,6 +59,7 @@
       </header>
         {{outlet}}
       <footer class="text-center">
+        <br />
         Copyright &copy; 2014 DeSoto County Museum | <a href="http://web.southernfriedgeek.com" alt="Southern Fried Geek Web Studios">SFG Web Studios</a>
       </footer>
     </div>
@@ -69,17 +70,29 @@
       </div>
       <div class="col-md-7">
         <h2 class="text-center">Welcome to the DeSoto County Museum!</h2>
-        <p>Located in Hernando, Mississippi, the Museum showcases artifacts and exhibits featuring the history of DeSoto County, Mississippi. The DeSoto County Museum features the history and development of DeSoto County, Mississippi, from 1541 to the present. Artifacts and displays begin with the arrival of Hernando DeSoto and his contact with the native inhabitants of Mississippi.  Displays continue through the riverboat days with a working model of a paddlewheel boat.  Other exhibits feature the parlor of an antebellum mansion and artifacts from the Civil War. Key events in the agricultural, recreational, and social development of DeSoto County are also on display.  Events in the African-American community are also featured in the museum. The museum also features the story of DeSoto County today!  Exhibits include the River Kings, the DeSoto Civic Center, the Economic Council, local artwork and entertainment, and stories of the growing communities of Horn Lake, Olive Branch, Southaven, and Hernando.</p>
-        <p>For up to date events and information, please check us out on facebook!</p>
+        <p class="text-justify">Located in Hernando, Mississippi, the Museum showcases artifacts and exhibits featuring the history of DeSoto County, Mississippi. The DeSoto County Museum features the history and development of DeSoto County, Mississippi, from 1541 to the present. Artifacts and displays begin with the arrival of Hernando DeSoto and his contact with the native inhabitants of Mississippi.  Displays continue through the riverboat days with a working model of a paddlewheel boat.  Other exhibits feature the parlor of an antebellum mansion and artifacts from the Civil War. Key events in the agricultural, recreational, and social development of DeSoto County are also on display.  Events in the African-American community are also featured in the museum. The museum also features the story of DeSoto County today!  Exhibits include the River Kings, the DeSoto Civic Center, the Economic Council, local artwork and entertainment, and stories of the growing communities of Horn Lake, Olive Branch, Southaven, and Hernando.</p>
+        <h4 class="text-center">For up to date events and information, please check us out on facebook!</h4>
         
       </div>
       <div class="col-md-4">
-
+        <h3 class="text-center">Hours</h3>
+        <p class="text-center"><strong>Monday - Saturday</strong></p>
+        <p class="text-center">10:00 AM - 5:00 PM</p>
+        <h3 class="text-center">Like Us, Follow Us, +1 Us!</h3>
+          <div class="col-md-4">
+            <img class="img-responsive" src="img/facebook.png">
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" src="img/twitter.png">
+          </div>
+          <div class="col-md-4">
+            <img class="img-responsive" src="img/googleplus.png">
+          </div>
       </div>
     </div>
 
   </script>
-  <script type="text/x-handlebars" id="about">
+  <script type="text/x-handlebars" id="staff">
     <div class="row">
       <div class="col-md-1">
 
@@ -143,7 +156,15 @@
         </p>
       </div>      
       <div class="col-md-7">
-        
+        <ul class="rslides">
+          <li><img src="img/ed3.jpg" alt=""></li>
+          <li><img src="img/ed5.jpg" alt=""></li>
+          <li><img src="img/ed6.jpg" alt=""></li>
+          <li><img src="img/ed7.jpg" alt=""></li>
+          <li><img src="img/ed8.jpg" alt=""></li>
+          <li><img src="img/education2.jpg" alt=""></li>
+          <li><img src="img/education4.jpg" alt=""></li>
+        </ul>
       </div>
     </div>
   </script>
@@ -155,7 +176,8 @@
   </script>
 
   <script src="js/libs/jquery-1.10.2.js"></script>  
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/responsiveslides.min.js"></script>
   <script src="js/libs/handlebars-1.1.2.js"></script>
   <script src="js/libs/ember-1.7.0.js"></script>
   <script src="js/app.js"></script>
