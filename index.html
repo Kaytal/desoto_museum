@@ -52,6 +52,11 @@
               Education
             {{/link-to}}
           {{/link-to}}
+          {{#link-to 'events' tagName="li" href=false}}
+            {{#link-to 'events' bubbles=false}}
+              Events
+            {{/link-to}}
+          {{/link-to}}
           {{#link-to 'membership' tagName="li" href=false}}
             {{#link-to 'membership' bubbles=false}}
               Membership
@@ -86,9 +91,10 @@
           </blockquote>
         <p class="text-justify">Located in Hernando, Mississippi, the Museum showcases artifacts and exhibits featuring the history of DeSoto County, Mississippi. The DeSoto County Museum features the history and development of DeSoto County, Mississippi, from 1541 to the present. Artifacts and displays begin with the arrival of Hernando DeSoto and his contact with the native inhabitants of Mississippi.  Displays continue through the riverboat days with a working model of a paddlewheel boat.  Other exhibits feature the parlor of an antebellum mansion and artifacts from the Civil War. Key events in the agricultural, recreational, and social development of DeSoto County are also on display.  Events in the African-American community are also featured in the museum. The museum also features the story of DeSoto County today!  Exhibits include the River Kings, the DeSoto Civic Center, the Economic Council, local artwork and entertainment, and stories of the growing communities of Horn Lake, Olive Branch, Southaven, and Hernando.</p>
         <h4 class="text-center">For up to date events and information, please check us out on facebook!</h4>
-        <img class="img-responsive centerimg" src="img/Full outside museum 3.jpg" alt="Full front view of museum as seen from commerce street" />        
+        <img class="img-responsive centerimg" src="img/Museum.JPG" alt="Full front view of museum as seen from commerce street" />        
       </div>
       <div class="col-md-4">
+        <h3 class="text-center">Free Admission</h3>
         <h3 class="text-center">Hours</h3>
         <p class="text-center"><strong>Monday - Saturday</strong></p>
         <p class="text-center">10:00 AM - 5:00 PM</p>
@@ -102,6 +108,10 @@
           <div class="col-md-4 social">
               <a href="https://plus.google.com/114925553654602575482/" alt="Google Plus DeSoto Museum" target="_blank"><img class="img-responsive" src="img/googleplus.png"></a>
           </div>
+          <div class="col-md-12">
+            <h3 class="text-center">Location</h3>
+            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.300834584038!2d-89.98767599999994!3d34.823528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887ff576cda19d2f%3A0x46b1cbe26748574c!2sDesoto+County+Museum!5e0!3m2!1sen!2sus!4v1421865579103' width='100%' height='250' frameborder='0'></iframe>
+          </div>
       </div>
     </div>
   </script>
@@ -111,7 +121,7 @@
 
       </div>
       <div class="col-md-2">
-        <img src="img/Brian.JPG" width="145" class="hidden-xs hidden-sm img-thumbnail" alt="Brian Hicks - Museum Curator" />
+        <img src="img/BrianHicks.jpg" width="145" class="hidden-xs hidden-sm img-thumbnail" alt="Brian Hicks - Museum Curator" />
       </div>
       <div class="col-md-8">
         <h3>Brian Hicks - Museum Director</h3>
@@ -222,6 +232,95 @@
         </div>
       </div>
     </div>
+  </script>
+  <script type="text/x-handlebars" id="events">
+      <div class="row">
+          <div class="col-md-2">
+          </div>
+        <div class="col-md-8">
+            <h2>Events</h2>
+            <div id="carousel-past-events" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-past-events" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-past-events" data-slide-to="1"></li>
+                <li data-target="#carousel-past-events" data-slide-to="2"></li>
+                <li data-target="#carousel-past-events" data-slide-to="3"></li>
+                <li data-target="#carousel-past-events" data-slide-to="4"></li>
+                <li data-target="#carousel-past-events" data-slide-to="5"></li>
+                <li data-target="#carousel-past-events" data-slide-to="6"></li>
+                <li data-target="#carousel-past-events" data-slide-to="7"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/bluegrass1.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h3>Bluegrass</h3>
+                    <p>Weekly bluegrass at the cabin<br />Thursday Nights<br />weather permtting</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/cabin%20photo.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h3>Reenactments</h3>
+                    <p>Volunteers reenact traditional crafts<br />during museum open house event.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/extra2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <h3>Community Events</h3>
+                    <p>The Museum sets up temporary displays at a variety of local/regional events.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/extra3.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <h3>Volunteers</h3>
+                    <p>The Museum is always looking for volunteers to help.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/extra4.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <h3>Interactive Museum Exhibits</h3>
+                    <p>The Museum offers a variety of interactive exhibits to educate all ages.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/extra5.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <p>Museum Staff participate in Olive Branch Historic Walking Tour.</p>
+                  </div>
+                </div>                                  
+                <div class="item">
+                  <img src="img/extra1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <p>Museum partners with many area organizations including the Daughters of the Revolution and Sons of the Confederate Veterans.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/cemetery%20tour.jpg" alt="...">
+                    <div class="carousel-caption">
+                    <h3>Historic Tours</h3>
+                    <p>The museum offers historic tours throughout the county</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-past-events" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-past-events" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+        </div>
+          <div class="col-md-2">
+          </div>
+      </div>
   </script>
   <script type="text/x-handlebars" id="membership">
     <div class="row">
